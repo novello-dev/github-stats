@@ -3,15 +3,15 @@
 svg {
   font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
   font-size: 13px;
-  line-height: 18px;
-}ss
+  line-height: 16px;
+}
 
 /* ===== Catppuccin Mocha ===== */
 #background {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
-  fill: #1e1e2e;          /* base */
-  stroke: #313244;        /* surface0 */
+  fill: #1e1e2e;
+  stroke: #313244;
   stroke-width: 1px;
   rx: 6px;
   ry: 6px;
@@ -28,14 +28,13 @@ foreignObject {
   height: calc(100% - 10px - 32px);
 }
 
-/* força fonte monoespaçada dentro do HTML */
 foreignObject,
 foreignObject * {
   font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
   box-sizing: border-box;
 }
 
-/* ===== TABLE LAYOUT ===== */
+/* ===== TABLE ===== */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -44,43 +43,43 @@ table {
 
 /* ===== TITLE ===== */
 th {
-  padding: 0.35em 0.5em 0.25em 0.5em;
+  padding: 4px 8px 6px 8px;
   text-align: left;
   font-size: 13px;
   font-weight: 600;
-  color: #89b4fa;         /* Catppuccin blue */
-}
-
-#gh-dark-mode-only:target th {
   color: #89b4fa;
 }
 
 /* ===== ROWS ===== */
 td {
-  padding: 0.25em 0.5em;
-  font-size: 11.5px;
-  line-height: 15px;
-  color: #a6adc8;         /* subtext0 */
-  vertical-align: middle;
-}
-
-#gh-dark-mode-only:target td {
+  padding: 3px 8px;
+  height: 18px;                 /* 🔑 todas as linhas iguais */
+  vertical-align: middle;       /* 🔑 base consistente */
   color: #a6adc8;
 }
 
-/* esquerda: labels */
+/* coluna esquerda */
 td:first-child {
-  width: 72%;
+  width: 74%;
+  font-size: 11px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
-/* direita: valores */
+/* coluna direita */
 td:last-child {
-  width: 28%;
+  width: 26%;
   text-align: right;
+  font-size: 12px;
   white-space: nowrap;
+}
+
+/* ===== ICONS ===== */
+.octicon {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: middle;       /* 🔑 chave do alinhamento */
+  fill: #6c7086;
 }
 
 /* ===== ANIMATION ===== */
@@ -91,17 +90,6 @@ tr {
 
 @keyframes slideIn {
   to { transform: translateX(0); }
-}
-
-/* ===== ICONS ===== */
-.octicon {
-  fill: #6c7086;          /* overlay0 */
-  margin-right: 0.6ch;
-  vertical-align: -2px;
-}
-
-#gh-dark-mode-only:target .octicon {
-  fill: #6c7086;
 }
 </style>
 
@@ -143,7 +131,7 @@ tr {
                   <path fill-rule="evenodd" d="M1 2.5A2.5 2.5 0 013.5 0h8.75a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V1.5h-8a1 1 0 00-1 1v6.708A2.492 2.492 0 013.5 9h3.25a.75.75 0 010 1.5H3.5a1 1 0 100 2h5.75a.75.75 0 010 1.5H3.5A2.5 2.5 0 011 11.5v-9zm13.23 7.79a.75.75 0 001.06-1.06l-2.505-2.505a.75.75 0 00-1.06 0L9.22 9.229a.75.75 0 001.06 1.061l1.225-1.224v6.184a.75.75 0 001.5 0V9.066l1.224 1.224z"></path>
                 </svg>All-time contributions
               </td>
-              <td>35</td>
+              <td>37</td>
             </tr>
 
             <tr style="animation-delay: 450ms">
@@ -152,7 +140,7 @@ tr {
                   <path fill-rule="evenodd" d="M8.75 1.75a.75.75 0 00-1.5 0V5H4a.75.75 0 000 1.5h3.25v3.25a.75.75 0 001.5 0V6.5H12A.75.75 0 0012 5H8.75V1.75zM4 13a.75.75 0 000 1.5h8a.75.75 0 100-1.5H4z"></path>
                 </svg>Lines of code changed
               </td>
-              <td>2,976</td>
+              <td>3,036</td>
             </tr>
 
             <tr style="animation-delay: 600ms">
