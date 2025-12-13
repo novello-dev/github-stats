@@ -17,12 +17,6 @@ svg {
   ry: 6px;
 }
 
-#gh-dark-mode-only:target #background {
-  fill: #1e1e2e;
-  stroke: #313244;
-  stroke-width: 0.5px;
-}
-
 foreignObject {
   width: calc(100% - 10px - 32px);
   height: calc(100% - 10px - 32px);
@@ -44,33 +38,40 @@ table {
 /* ===== TITLE ===== */
 th {
   padding: 4px 8px 6px 8px;
-  text-align: left;
   font-size: 13px;
   font-weight: 600;
   color: #89b4fa;
+  text-align: left;
 }
 
 /* ===== ROWS ===== */
 td {
-  padding: 3px 8px;
-  height: 18px;                 /* 🔑 todas as linhas iguais */
-  vertical-align: middle;       /* 🔑 base consistente */
+  padding: 0 8px;
+  height: 18px;
+  vertical-align: middle;
   color: #a6adc8;
 }
 
-/* coluna esquerda */
+/* ===== LEFT COLUMN ===== */
 td:first-child {
   width: 74%;
   font-size: 11px;
   white-space: nowrap;
 }
 
-/* coluna direita */
+/* ===== RIGHT COLUMN ===== */
 td:last-child {
   width: 26%;
-  text-align: right;
   font-size: 12px;
   white-space: nowrap;
+  text-align: right;
+}
+
+/* ===== BASELINE ALIGNMENT FIX ===== */
+td:first-child,
+td:last-child {
+  position: relative;
+  top: -0.5px;   /* 🔑 compensação REAL de baseline */
 }
 
 /* ===== ICONS ===== */
@@ -78,7 +79,9 @@ td:last-child {
   width: 14px;
   height: 14px;
   margin-right: 6px;
-  vertical-align: middle;       /* 🔑 chave do alinhamento */
+  vertical-align: middle;
+  position: relative;
+  top: -0.5px;   /* 🔑 mesma compensação do texto */
   fill: #6c7086;
 }
 
@@ -91,6 +94,7 @@ tr {
 @keyframes slideIn {
   to { transform: translateX(0); }
 }
+
 </style>
 
 <g>
