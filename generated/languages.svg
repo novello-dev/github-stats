@@ -6,24 +6,26 @@ svg {
   line-height: 21px;
 }
 
+/* ===== Catppuccin Mocha theme ===== */
 #background {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
-  fill: white;
-  stroke: rgb(225, 228, 232);
+  fill: #1e1e2e;           /* base */
+  stroke: #313244;         /* surface0 */
   stroke-width: 1px;
   rx: 6px;
   ry: 6px;
 }
 
 #gh-dark-mode-only:target #background {
-  fill: #0d1117;
+  fill: #1e1e2e;
+  stroke: #313244;
   stroke-width: 0.5px;
 }
 
 foreignObject {
   width: calc(100% - 10px - 32px);
-  height: calc(100% - 10px - 24px);
+  height: calc(100% - 10px - 32px);
 }
 
 h2 {
@@ -32,13 +34,13 @@ h2 {
   line-height: 24px;
   font-size: 16px;
   font-weight: 600;
-  color: rgb(36, 41, 46);
-  fill: rgb(36, 41, 46);
+  color: #cdd6f4;         /* text */
+  fill: #cdd6f4;          /* text */
 }
 
 #gh-dark-mode-only:target h2 {
-  color: #c9d1d9;
-  fill: #c9d1d9;
+  color: #cdd6f4;
+  fill: #cdd6f4;
 }
 
 ul {
@@ -71,8 +73,8 @@ div.ellipsis {
 }
 
 .octicon {
-  fill: rgb(88, 96, 105);
-  margin-right: 0.5ch;
+  fill: #6c7086;           /* overlay0 */
+  margin-right: 1ch;
   vertical-align: top;
 }
 
@@ -85,14 +87,14 @@ div.ellipsis {
   display: flex;
   height: 8px;
   overflow: hidden;
-  background-color: rgb(225, 228, 232);
+  background-color: rgb(225, 228, 232);  /* surface2 */
   border-radius: 6px;
   outline: 1px solid transparent;
   margin-bottom: 1em;
 }
 
 #gh-dark-mode-only:target .progress {
-  background-color: rgba(110, 118, 129, 0.4);
+  background-color: rgba(110, 118, 129, 0.4);  /* surface0 */
 }
 
 .progress-item {
@@ -101,25 +103,25 @@ div.ellipsis {
 }
 
 #gh-dark-mode-only:target .progress-item {
-  outline: 2px solid #393f47;
+  outline: 2px solid #45475a; /* surface1 */
 }
 
 .lang {
   font-weight: 600;
   margin-right: 4px;
-  color: rgb(36, 41, 46);
+  color: #cdd6f4;          /* text */
 }
 
 #gh-dark-mode-only:target .lang {
-  color: #c9d1d9;
+  color: #cdd6f4;
 }
 
 .percent {
-  color: rgb(88, 96, 105)
+  color: #8b949e;  /* subtext0 */
 }
 
 #gh-dark-mode-only:target .percent {
-  color: #8b949e;
+  color: #8b949e;  /* subtext0 */
 }
 </style>
 <g>
