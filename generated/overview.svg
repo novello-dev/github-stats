@@ -8,7 +8,7 @@ svg {
 
 /* ===== Catppuccin Mocha ===== */
 #background {
-  width: calc(100% - 10px);
+  width: calc(100% - 10px);sa
   height: calc(100% - 10px);
   fill: #1e1e2e;
   stroke: #313244;
