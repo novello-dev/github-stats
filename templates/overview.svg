@@ -3,7 +3,7 @@
 svg {
   font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 17px;   /* ↓ 1px */
 }
 
 /* ===== Catppuccin Mocha ===== */
@@ -37,7 +37,7 @@ table {
 
 /* ===== TITLE ===== */
 th {
-  padding: 6px 8px 8px 8px;
+  padding: 6px 8px 7px 8px; /* ↓ 1px embaixo */
   text-align: left;
   font-size: 13.5px;
   font-weight: 600;
@@ -47,9 +47,9 @@ th {
 
 /* ===== ROWS ===== */
 td {
-  padding: 4px 8px;       /* breathing room CONTROLADO */
+  padding: 3px 8px;     /* ↓ 1px vertical */
   font-size: 12px;
-  line-height: 16px;      /* seguro p/ 210px */
+  line-height: 15px;   /* ↓ 1px */
   color: #a6adc8;
   vertical-align: middle;
 }
