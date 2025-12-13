@@ -7,7 +7,7 @@ svg {
 }
 
 /* ===== Catppuccin Mocha ===== */
-#background {
+#background {zaza
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   fill: #1e1e2e;          /* base */
