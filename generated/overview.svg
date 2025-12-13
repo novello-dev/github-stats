@@ -3,7 +3,7 @@
 svg {
   font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 17px;   /* ↓ 1px */
 }
 
 /* ===== Catppuccin Mocha ===== */
@@ -15,7 +15,7 @@ svg {
   stroke-width: 1px;
   rx: 6px;
   ry: 6px;
-}dsds
+}
 
 foreignObject {
   width: calc(100% - 10px - 32px);
@@ -37,7 +37,7 @@ table {
 
 /* ===== TITLE ===== */
 th {
-  padding: 6px 8px 8px 8px;
+  padding: 6px 8px 7px 8px; /* ↓ 1px embaixo */
   text-align: left;
   font-size: 13.5px;
   font-weight: 600;
@@ -47,9 +47,9 @@ th {
 
 /* ===== ROWS ===== */
 td {
-  padding: 4px 8px;       /* breathing room CONTROLADO */
+  padding: 3px 8px;     /* ↓ 1px vertical */
   font-size: 12px;
-  line-height: 16px;      /* seguro p/ 210px */
+  line-height: 15px;   /* ↓ 1px */
   color: #a6adc8;
   vertical-align: middle;
 }
@@ -135,7 +135,7 @@ tr {
                   <path fill-rule="evenodd" d="M1 2.5A2.5 2.5 0 013.5 0h8.75a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V1.5h-8a1 1 0 00-1 1v6.708A2.492 2.492 0 013.5 9h3.25a.75.75 0 010 1.5H3.5a1 1 0 100 2h5.75a.75.75 0 010 1.5H3.5A2.5 2.5 0 011 11.5v-9zm13.23 7.79a.75.75 0 001.06-1.06l-2.505-2.505a.75.75 0 00-1.06 0L9.22 9.229a.75.75 0 001.06 1.061l1.225-1.224v6.184a.75.75 0 001.5 0V9.066l1.224 1.224z"></path>
                 </svg>All-time contributions
               </td>
-              <td>41</td>
+              <td>43</td>
             </tr>
 
             <tr style="animation-delay: 450ms">
@@ -144,7 +144,7 @@ tr {
                   <path fill-rule="evenodd" d="M8.75 1.75a.75.75 0 00-1.5 0V5H4a.75.75 0 000 1.5h3.25v3.25a.75.75 0 001.5 0V6.5H12A.75.75 0 0012 5H8.75V1.75zM4 13a.75.75 0 000 1.5h8a.75.75 0 100-1.5H4z"></path>
                 </svg>Lines of code changed
               </td>
-              <td>3,108</td>
+              <td>3,118</td>
             </tr>
 
             <tr style="animation-delay: 600ms">
