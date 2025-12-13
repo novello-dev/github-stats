@@ -3,7 +3,7 @@
 svg {
   font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
   font-size: 13px;
-  line-height: 16px;
+  line-height: 18px;
 }
 
 /* ===== Catppuccin Mocha ===== */
@@ -37,51 +37,51 @@ table {
 
 /* ===== TITLE ===== */
 th {
-  padding: 4px 8px 6px 8px;
-  font-size: 13px;
+  padding: 6px 8px 8px 8px;
+  text-align: left;
+  font-size: 13.5px;
   font-weight: 600;
   color: #89b4fa;
-  text-align: left;
+  white-space: nowrap;
 }
 
 /* ===== ROWS ===== */
 td {
-  padding: 0 8px;
-  height: 18px;
-  vertical-align: middle;
-  color: #a6adc8;
-}
-
-/* ===== LEFT COLUMN ===== */
-td:first-child {
-  width: 74%;
-  font-size: 11px;
-  white-space: nowrap;
-}
-
-/* ===== RIGHT COLUMN ===== */
-td:last-child {
-  width: 26%;
+  padding: 4px 8px;       /* breathing room CONTROLADO */
   font-size: 12px;
-  white-space: nowrap;
-  text-align: right;
+  line-height: 16px;      /* seguro p/ 210px */
+  color: #a6adc8;
+  vertical-align: middle;
 }
 
-/* ===== BASELINE ALIGNMENT FIX ===== */
+/* esquerda */
+td:first-child {
+  width: 76%;
+  white-space: nowrap;
+}
+
+/* direita */
+td:last-child {
+  width: 24%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* ===== BASELINE LOCK ===== */
 td:first-child,
 td:last-child {
   position: relative;
-  top: -0.5px;   /* 🔑 compensação REAL de baseline */
+  top: -0.5px;
 }
 
 /* ===== ICONS ===== */
 .octicon {
   width: 14px;
   height: 14px;
-  margin-right: 6px;
+  margin-right: 8px;
   vertical-align: middle;
   position: relative;
-  top: -0.5px;   /* 🔑 mesma compensação do texto */
+  top: -0.5px;
   fill: #6c7086;
 }
 
