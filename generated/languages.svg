@@ -1,10 +1,18 @@
 <svg id="gh-dark-mode-only" width="360" height="210" xmlns="http://www.w3.org/2000/svg">
 <style>
+/* ===== Font stack: JetBrains Mono first ===== */
 svg {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
   font-size: 14px;
   line-height: 21px;
 }
+
+/* Garantir que textos HTML dentro do foreignObject usem a mesma fonte */
+foreignObject,
+foreignObject * {
+  font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
+}
+
 
 /* ===== Catppuccin Mocha theme ===== */
 #background {
