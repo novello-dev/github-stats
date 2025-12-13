@@ -43,8 +43,9 @@ jobs:
         EXCLUDED: ${{ secrets.EXCLUDED }}
         EXCLUDED_LANGS: ${{ secrets.EXCLUDED_LANGS }}
         EXCLUDE_FORKED_REPOS: true
-        STAT_THEME: dark
-
+        STAT_THEME: catppuccin
+        CUSTOM_CSS: assets/css/catppuccin.css
+        
     # Commit all changed files to the repository
     - name: Commit to the repo
       run: |
